@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-
+import logo from "@/assets/logo.jpg";
 export function HeroSection() {
   return (
     <section className="relative gradient-hero-bg overflow-hidden">
@@ -80,11 +80,11 @@ export function HeroSection() {
                 <div className="aspect-square max-w-md mx-auto gradient-bg rounded-3xl p-1">
                   <div className="w-full h-full bg-card rounded-[22px] flex items-center justify-center">
                     <div className="text-center p-8">
-                      <div className="w-24 h-24 gradient-bg rounded-2xl mx-auto mb-6 flex items-center justify-center animate-pulse-glow">
-                        <span className="text-4xl font-display font-bold text-primary-foreground">C</span>
-                      </div>
-                      <p className="text-xl font-display font-semibold mb-2">Creanova Technologies</p>
-                      <p className="text-sm text-muted-foreground">Innovation & Growth</p>
+                      <img 
+                        src={logo} 
+                        alt="Creanova Technologies Limited" 
+                        className="max-w-[280px] mx-auto"
+                      />
                     </div>
                   </div>
                 </div>

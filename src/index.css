@@ -11,50 +11,50 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Blue/Teal Palette */
-    --background: 210 20% 98%;
-    --foreground: 215 25% 15%;
+    /* Brand Colors - Navy Blue Palette (matching Creanova logo) */
+    --background: 210 30% 98%;
+    --foreground: 210 60% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 210 60% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 210 60% 15%;
 
-    /* Primary - Deep Teal Blue */
-    --primary: 195 85% 35%;
+    /* Primary - Deep Navy Blue (from logo) */
+    --primary: 207 82% 24%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Lighter Teal */
-    --secondary: 185 45% 92%;
-    --secondary-foreground: 195 85% 25%;
+    /* Secondary - Light Blue Gray */
+    --secondary: 207 30% 94%;
+    --secondary-foreground: 207 82% 24%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 210 25% 96%;
+    --muted-foreground: 210 20% 45%;
 
-    /* Accent - Vibrant Teal */
-    --accent: 175 65% 45%;
+    /* Accent - Lighter Blue (from logo subtitle) */
+    --accent: 200 65% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 195 85% 35%;
+    --border: 210 25% 90%;
+    --input: 210 25% 90%;
+    --ring: 207 82% 24%;
 
     --radius: 0.75rem;
 
     /* Custom Brand Variables */
-    --navy: 215 50% 15%;
-    --navy-light: 215 40% 25%;
-    --teal-glow: 175 80% 50%;
-    --gradient-primary: linear-gradient(135deg, hsl(195 85% 35%) 0%, hsl(175 65% 45%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(195 50% 95%) 100%);
-    --gradient-dark: linear-gradient(135deg, hsl(215 50% 15%) 0%, hsl(195 85% 25%) 100%);
-    --shadow-soft: 0 4px 20px -4px hsl(215 25% 15% / 0.1);
-    --shadow-card: 0 8px 30px -8px hsl(215 25% 15% / 0.12);
-    --shadow-elevated: 0 20px 50px -12px hsl(215 25% 15% / 0.15);
+    --navy: 207 82% 24%;
+    --navy-light: 207 60% 35%;
+    --blue-accent: 200 65% 50%;
+    --gradient-primary: linear-gradient(135deg, hsl(207 82% 24%) 0%, hsl(200 65% 45%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(210 30% 98%) 0%, hsl(207 40% 95%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(207 82% 18%) 0%, hsl(207 70% 28%) 100%);
+    --shadow-soft: 0 4px 20px -4px hsl(207 82% 24% / 0.12);
+    --shadow-card: 0 8px 30px -8px hsl(207 82% 24% / 0.15);
+    --shadow-elevated: 0 20px 50px -12px hsl(207 82% 24% / 0.18);
 
     /* Sidebar - keeping defaults */
     --sidebar-background: 0 0% 98%;
@@ -64,46 +64,46 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 207 82% 24%;
   }
 
   .dark {
-    --background: 215 50% 8%;
-    --foreground: 210 20% 96%;
+    --background: 207 50% 8%;
+    --foreground: 210 25% 96%;
 
-    --card: 215 45% 12%;
-    --card-foreground: 210 20% 96%;
+    --card: 207 45% 12%;
+    --card-foreground: 210 25% 96%;
 
-    --popover: 215 45% 12%;
-    --popover-foreground: 210 20% 96%;
+    --popover: 207 45% 12%;
+    --popover-foreground: 210 25% 96%;
 
-    --primary: 175 65% 50%;
-    --primary-foreground: 215 50% 10%;
+    --primary: 200 65% 55%;
+    --primary-foreground: 207 50% 10%;
 
-    --secondary: 215 40% 18%;
-    --secondary-foreground: 210 20% 90%;
+    --secondary: 207 40% 18%;
+    --secondary-foreground: 210 25% 90%;
 
-    --muted: 215 40% 16%;
-    --muted-foreground: 210 15% 60%;
+    --muted: 207 40% 16%;
+    --muted-foreground: 210 20% 60%;
 
-    --accent: 195 85% 45%;
+    --accent: 200 70% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 40% 20%;
-    --input: 215 40% 20%;
-    --ring: 175 65% 50%;
+    --border: 207 40% 20%;
+    --input: 207 40% 20%;
+    --ring: 200 65% 55%;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 207 50% 10%;
+    --sidebar-foreground: 210 25% 95%;
+    --sidebar-primary: 200 65% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 207 40% 16%;
+    --sidebar-accent-foreground: 210 25% 95%;
+    --sidebar-border: 207 40% 16%;
+    --sidebar-ring: 200 65% 55%;
   }
 }
 

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const footerLinks = {
   company: [
@@ -29,13 +30,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-primary-foreground/20 rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">C</span>
-              </div>
-              <span className="font-display font-bold text-xl">
-                Creanova
-              </span>
+            <Link to="/" className="flex items-center mb-6">
+              <img 
+                src={logo} 
+                alt="Creanova Technologies Limited" 
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
               Your Business Growth & Automation Partner. Helping businesses automate, grow, and scale through technology, AI, and innovation.
