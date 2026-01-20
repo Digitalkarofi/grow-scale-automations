@@ -2,14 +2,13 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo-clean.png";
 
 const navLinks = [
-  { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
   { name: "AI Solutions", path: "/ai-solutions" },
-  { name: "Portfolio", path: "/portfolio" },
+  { name: "Programs", path: "/portfolio" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -20,7 +19,7 @@ export function Navbar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
       <nav className="container-wide">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -28,18 +27,18 @@ export function Navbar() {
             <img 
               src={logo} 
               alt="Creanova Technologies Limited" 
-              className="h-12 w-auto object-contain"
+              className="h-14 w-auto object-contain"
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden lg:flex items-center gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`nav-link text-sm ${
-                  isActive(link.path) ? "text-primary" : ""
+                className={`text-sm font-semibold uppercase tracking-wide transition-colors hover:text-primary ${
+                  isActive(link.path) ? "text-primary" : "text-foreground/80"
                 }`}
               >
                 {link.name}
@@ -49,8 +48,8 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button variant="navCta" size="default" asChild>
-              <Link to="/contact">Get Started</Link>
+            <Button variant="hero" size="default" asChild>
+              <Link to="/contact">Get In Touch</Link>
             </Button>
           </div>
 
@@ -73,7 +72,7 @@ export function Navbar() {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                  className={`px-4 py-3 rounded-lg text-sm font-semibold uppercase tracking-wide transition-colors ${
                     isActive(link.path)
                       ? "bg-secondary text-primary"
                       : "text-foreground/80 hover:bg-muted"
@@ -85,7 +84,7 @@ export function Navbar() {
               <div className="pt-4 px-4">
                 <Button variant="hero" className="w-full" asChild>
                   <Link to="/contact" onClick={() => setIsOpen(false)}>
-                    Get Started
+                    Get In Touch
                   </Link>
                 </Button>
               </div>
