@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Bot, Target, CheckCircle2, TrendingUp } from "lucide-react";
+import { ArrowRight, Bot, CheckCircle2, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-team.jpg";
 
 export function HeroSection() {
@@ -17,9 +17,10 @@ export function HeroSection() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold leading-[1.1] mb-6 animate-fade-up animation-delay-100">
-                <span className="text-foreground">Grow. Scale.</span>
+                <span className="text-foreground italic">Grow.</span>{" "}
+                <span className="text-foreground italic">Scale.</span>
                 <br />
-                <span className="gradient-text">Automate.</span>
+                <span className="gradient-text italic">Automate.</span>
               </h1>
 
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed animate-fade-up animation-delay-200">

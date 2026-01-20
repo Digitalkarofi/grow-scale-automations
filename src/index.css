@@ -121,6 +121,11 @@
     font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
     @apply font-bold tracking-tight;
   }
+
+  /* Custom navy background class */
+  .bg-navy {
+    background-color: hsl(207 82% 24%);
+  }
 }
 
 @layer components {
