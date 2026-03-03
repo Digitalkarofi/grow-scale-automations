@@ -19,19 +19,19 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    details: "info@creanovatech.com",
-    link: "mailto:info@creanovatech.com",
+    details: "info@creanovatech.com.ng",
+    link: "mailto:info@creanovatech.com.ng",
   },
   {
     icon: Phone,
     title: "Call Us",
-    details: "+234 800 000 0000",
-    link: "tel:+2348000000000",
+    details: "+234(0)7085818980",
+    link: "tel:+2347085818980",
   },
   {
     icon: MapPin,
     title: "Visit Us",
-    details: "Lagos, Nigeria",
+    details: "Katsina, Nigeria",
     link: "#",
   },
   {
@@ -231,19 +231,22 @@ const Contact = () => {
                 <h4 className="font-semibold mb-4">Follow Us</h4>
                 <div className="flex gap-4">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/creanova-technologies-limited/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B5JT1%2FyGKT4ub4m0MNq7K3w%3D%3D"
+                    target="_blank" rel="noopener noreferrer"
                     className="w-12 h-12 bg-card rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors border border-border"
                   >
                     <Linkedin size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="https://x.com/Creanovalab"
+                    target="_blank" rel="noopener noreferrer"
                     className="w-12 h-12 bg-card rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors border border-border"
                   >
                     <Twitter size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/share/17qKdsvjrr/"
+                    target="_blank" rel="noopener noreferrer"
                     className="w-12 h-12 bg-card rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors border border-border"
                   >
                     <Facebook size={20} />
