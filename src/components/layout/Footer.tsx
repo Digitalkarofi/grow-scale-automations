@@ -42,19 +42,22 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/creanova-technologies-limited/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B5JT1%2FyGKT4ub4m0MNq7K3w%3D%3D"
+                target="_blank" rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
                 <Linkedin size={18} />
               </a>
               <a
-                href="#"
+                href="https://x.com/Creanovalab"
+                target="_blank" rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
                 <Twitter size={18} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/share/17qKdsvjrr/"
+                target="_blank" rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
                 <Facebook size={18} />
@@ -100,15 +103,15 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-primary-foreground/70">
                 <MapPin size={18} className="shrink-0 mt-0.5" />
-                <span>Lagos, Nigeria</span>
+                <span>Katsina, Nigeria</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <Mail size={18} />
-                <span>info@creanovatech.com</span>
+                <span>info@creanovatech.com.ng</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <Phone size={18} />
-                <span>+234 800 000 0000</span>
+                <span>+234(0)7085818980</span>
               </li>
             </ul>
           </div>

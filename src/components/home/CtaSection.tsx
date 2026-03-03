@@ -35,13 +35,13 @@ export function CtaSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-8 justify-center text-primary-foreground/80">
-              <a href="tel:+2348000000000" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+              <a href="tel:+2347085818980" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
                 <Phone size={18} />
-                <span>+234 800 000 0000</span>
+                <span>+234(0)7085818980</span>
               </a>
-              <a href="mailto:info@creanovatech.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+              <a href="mailto:info@creanovatech.com.ng" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
                 <Mail size={18} />
-                <span>info@creanovatech.com</span>
+                <span>info@creanovatech.com.ng</span>
               </a>
             </div>
           </div>
